@@ -11,6 +11,6 @@ image: python:latest
 
 publish:
   image: node:12
-  stage: release
+  stage: deploy
   script:
     - npx semantic-release
