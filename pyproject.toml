@@ -20,7 +20,7 @@ description = "test"
 name = "test_semrel"
 readme = "README.md"
 requires-python = ">=3.10"
-version = "0.1.0"  # This is the only place version should be hard coded
+version = "0.1.1"  # This is the only place version should be hard coded
 
 [tool.semantic_release]
 version_toml = [
