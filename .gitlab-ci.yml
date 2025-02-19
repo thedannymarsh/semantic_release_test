@@ -41,3 +41,4 @@ version_and_publish:
     # Don't run on automatic commits
     - if: $CI_COMMIT_AUTHOR =~ /semantic-release.*/
       when: never
+    - when: on_success
