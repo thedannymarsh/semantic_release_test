@@ -32,4 +32,4 @@ major_on_zero = false
 no_git_verify = true
 tag_format = "v{version}"
 remote.type = "gitlab"
-remote.token = "${SEMANTIC_RELEASE_ACCESS}"
+remote.token.env = "SEMANTIC_RELEASE_ACCESS"
