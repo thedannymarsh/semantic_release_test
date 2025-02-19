@@ -28,6 +28,7 @@ version_and_publish:
     #- pip install twine
     #- pip install poetry
   script:
+    - echo $SEMANTIC_RELEASE_ACCESS
     - git checkout "$CI_COMMIT_REF_NAME"
     - semantic-release version
     #- |
