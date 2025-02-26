@@ -29,6 +29,7 @@ version_and_publish:
     #- pip install twine
     #- pip install poetry
   script:
+    # - git fetch --unshallow --prune-tags --prune --all --force
     - git fetch --unshallow --prune-tags --prune --all --force
     - echo "CI_COMMIT_REF_NAME" $CI_COMMIT_REF_NAME
     - git checkout -B $SOURCE_BRANCH HEAD
