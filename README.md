@@ -1,1 +1,1 @@
-# semantic release tests
+# semantic release test
