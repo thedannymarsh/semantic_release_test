@@ -1,25 +1,25 @@
-# The release pipeline will run only if all jobs in the test pipeline are successful
+# The release pipeline will run only on the master/main branch a commit is triggered
 stages:
-  - test
   - release
 
-before_script:
-  - npm install
-
-node:10:
-  image: node:10
-  stage: test
-  script:
-    - npm test
-
-node:12:
-  image: node:12
-  stage: test
-  script:
-    - npm test
-
-publish:
-  image: node:12
+release:
+  image: node:10-buster-slim
   stage: release
+  before_script:
+    - apt-get update && apt-get install -y --no-install-recommends git-core ca-certificates
+    - npm install -g semantic-release @semantic-release/gitlab
   script:
-    - npx semantic-release
+    - semantic-release
+  rules:
+    - if: $CI_COMMIT_BRANCH == "master" # or main
+
+release:
+  image: node:12-buster-slim
+  stage: release
+  before_script:
+    - apt-get update && apt-get install -y --no-install-recommends git-core ca-certificates
+    - npm install -g semantic-release @semantic-release/gitlab
+  script:
+    - semantic-release
+  rules:
+    - if: $CI_COMMIT_BRANCH == "master" # or main
