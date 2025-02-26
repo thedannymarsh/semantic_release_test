@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.1.3 (2025-02-26)
+
+### Bug Fixes
+
+- Asdasd
+  ([`34c0a9f`](https://gitlab.com/dpm42/semantic_release_test/-/commit/34c0a9f5dbdd641f5a7544609aee9fc97e2eaf8b))
+
+
 ## v0.1.2 (2025-02-26)
 
 ### Bug Fixes
