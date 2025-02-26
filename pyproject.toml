@@ -31,7 +31,5 @@ commit_parser = "conventional"
 major_on_zero = false
 no_git_verify = true
 tag_format = "v{version}"
-
-[tool.semantic_release.remote]
-
-token = []
+remote.type = "gitlab"
+remote.token.env = "SEMANTIC_RELEASE_ACCESS"
