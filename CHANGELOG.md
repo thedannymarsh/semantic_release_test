@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.1.4 (2025-02-26)
+
+### Bug Fixes
+
+- No
+  ([`b723cdb`](https://gitlab.com/dpm42/semantic_release_test/-/commit/b723cdb4b29eb10862acf5db128d09d8301e9976))
+
+
 ## v0.1.3 (2025-02-26)
 
 ### Bug Fixes
