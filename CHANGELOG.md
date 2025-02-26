@@ -1,12 +1,30 @@
 # CHANGELOG
 
 
+## v0.1.2 (2025-02-26)
+
+### Bug Fixes
+
+- Remove test stuff
+  ([`79a6894`](https://gitlab.com/dpm42/semantic_release_test/-/commit/79a6894316ec393749659ab74d3777963ea72479))
+
+### Build System
+
+- Add precommit config and src
+  ([`df51a3e`](https://gitlab.com/dpm42/semantic_release_test/-/commit/df51a3ee4d881bb37d9b1b0dc0c749650f6b8cba))
+
+### Documentation
+
+- I changed stuff
+  ([`81a1ab4`](https://gitlab.com/dpm42/semantic_release_test/-/commit/81a1ab4b715a70aa9cc4bc01bb6a83af66167963))
+
+
 ## v0.1.1 (2025-02-19)
 
 ### Bug Fixes
 
 - Add semantic release block to pyproject.toml
-  ([`8ff6012`](https://github.com/dpm42/semantic_release_test/commit/8ff601226c12d464df9fd0445b475afa32531c55))
+  ([`8ff6012`](https://gitlab.com/dpm42/semantic_release_test/-/commit/8ff601226c12d464df9fd0445b475afa32531c55))
 
 
 ## v0.1.0 (2025-02-19)
@@ -14,4 +32,4 @@
 ### Features
 
 - Added starting configs for semantic_release
-  ([`8cc443d`](https://github.com/dpm42/semantic_release_test/commit/8cc443d0efb2d89f01ed3316490215fd4f499834))
+  ([`8cc443d`](https://gitlab.com/dpm42/semantic_release_test/-/commit/8cc443d0efb2d89f01ed3316490215fd4f499834))
