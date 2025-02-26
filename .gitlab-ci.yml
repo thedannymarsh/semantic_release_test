@@ -7,7 +7,7 @@ image: python:latest
 
 variables:
   PIP_CACHE_DIR: $CI_PROJECT_DIR/.cache/pip # Set folder in working dir for cache
-  GITLAB_TOKEN: $GITLAB_TOKEN
+  GITLAB_TOKEN: $TEST_TOKEN
 # Runs on 1) commit in main branch that were not made by the semantic-release job
 # GITLAB_USER_NAME and GITLAB_USER_EMAIL are the person responsible for the job.
 # This can be either the person who clicked on the merge button in the UI, 
