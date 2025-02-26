@@ -8,6 +8,9 @@ image: python:latest
 variables:
   PIP_CACHE_DIR: $CI_PROJECT_DIR/.cache/pip # Set folder in working dir for cache
   GITLAB_TOKEN: $TEST_TOKEN
+  # GL_TOKEN: ${RELEASE_TOKEN}
+  # REPOSITORY_USERNAME: __token__
+  # REPOSITORY_PASSWORD: ${RELEASE_TOKEN}
 # Runs on 1) commit in main branch that were not made by the semantic-release job
 # GITLAB_USER_NAME and GITLAB_USER_EMAIL are the person responsible for the job.
 # This can be either the person who clicked on the merge button in the UI, 
@@ -32,9 +35,9 @@ version_and_publish:
     # - git fetch --unshallow --prune-tags --prune --all --force
     - git fetch --prune-tags --prune --all --force
     - echo "CI_COMMIT_REF_NAME" $CI_COMMIT_REF_NAME
-    - git checkout -B $SOURCE_BRANCH HEAD
-    - semantic-release -v version
-    - echo "$SEMANTIC_RELEASE_ACCESS"
+    # - git checkout -B $SOURCE_BRANCH HEAD
+    # - semantic-release -v version
+    # - echo "$SEMANTIC_RELEASE_ACCESS"
     - git checkout "$CI_COMMIT_REF_NAME"
     - semantic-release version
     #- |
