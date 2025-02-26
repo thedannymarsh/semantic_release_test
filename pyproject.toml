@@ -33,3 +33,4 @@ no_git_verify = true
 tag_format = "v{version}"
 remote.type = "gitlab"
 remote.token.env = "GITLAB_TOKEN"
+ignore_token_for_push = true
