@@ -11,4 +11,4 @@ release:
   script:
     - semantic-release
   rules:
-    - if: $CI_COMMIT_BRANCH == "master" # or main
+    - if: $CI_COMMIT_BRANCH == "main" # or main
