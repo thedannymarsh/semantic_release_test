@@ -1,14 +1,20 @@
-# The release pipeline will run only on the master/main branch a commit is triggered
 stages:
   - release
 
 release:
-  image: node:12-buster-slim
   stage: release
+  image: node:18
+  only:
+    - main
+  variables:
+    # These variables should be set in GitLab’s CI/CD settings as protected secrets.
+    GITLAB_TOKEN: $GITLAB_TOKEN
+    # PYPI_TOKEN: $PYPI_TOKEN
   before_script:
-    - apt-get update && apt-get install -y --no-install-recommends git-core ca-certificates
-    - npm install -g semantic-release @semantic-release/gitlab
+    # Install Python 3.11 (adjust as needed for your base image)
+    - apt-get update && apt-get install -y python3.11
   script:
-    - semantic-release
-  rules:
-    - if: $CI_COMMIT_BRANCH == "main" # or main
+    # Install dependencies (including semantic-release)
+    - npm install
+    # Run semantic-release
+    - npx semantic-release
