@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.3.0 (2025-02-27)
+
+### Features
+
+- Remove unnecessary files
+  ([`4b354ae`](https://gitlab.oit.duke.edu/dpm42/semantic_release_test/-/commit/4b354aef3f05c30c764e0ac61b3c720285619d30))
+
+
 ## v0.2.0 (2025-02-27)
 
 ### Bug Fixes
