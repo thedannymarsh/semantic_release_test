@@ -18,8 +18,8 @@ version_and_publish:
     - pip install .
   script:
     - git checkout "$CI_COMMIT_REF_NAME"
-    - semantic-release version
     - semantic-release -c .github_publish.toml version 
+    - semantic-release version
     - semantic-release -c .github_publish.toml publish 
   cache:
     paths:
