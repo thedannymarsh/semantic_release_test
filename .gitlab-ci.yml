@@ -19,6 +19,7 @@ version_and_publish:
   script:
     - git checkout "$CI_COMMIT_REF_NAME"
     - semantic-release version
+    - semantic-release -c .github_publish.toml publish 
   cache:
     paths:
       - ${PIP_CACHE_DIR}
