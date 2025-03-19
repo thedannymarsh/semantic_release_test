@@ -10,6 +10,7 @@ major_on_zero = false
 no_git_verify = true
 tag_format = "v{version}"
 remote.type = "github"
+remote.url = https://github.com/thedannymarsh/semantic_release_test.git
 upload_to_PyPI = false
 
 [tool.semantic_release.changelog]
